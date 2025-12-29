@@ -54,3 +54,22 @@ To use this template, follow these steps:
 ## License
 
 This project is licensed under the MIT License.
+
+
+
+How to add GitHub Repository: 
+
+cd /Users/prashant/AMBAR_WORK/PORTCLASSIC
+git init
+git add .
+git commit -m "first commit"
+gh repo create My-PortF --public --source=. --remote=origin
+git push -u origin main
+
+
+
+For Updates:
+
+git add .
+git commit -m "update"
+git push
