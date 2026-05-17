@@ -13,16 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ambar Gupta | AI & Full Stack Developer",
+  metadataBase: new URL("https://ambar-portfolio.onrender.com"),
+
+  title: "Ambar Gupta | AI Developer & Full Stack Engineer",
 
   description:
-    "AI Developer Portfolio showcasing projects, certifications, skills, and experience in AI, web development, and data science.",
+    "Modern AI Developer portfolio showcasing projects, certifications, skills, and experience in AI, web development, and data science.",
 
   openGraph: {
-    title: "Ambar Gupta | AI & Full Stack Developer",
+    title: "Ambar Gupta | AI Developer & Full Stack Engineer",
 
     description:
-      "AI Developer Portfolio showcasing projects, certifications, and technical skills.",
+      "Modern AI Developer portfolio showcasing projects, certifications, skills, and experience in AI and full stack development.",
 
     url: "https://ambar-portfolio.onrender.com",
 
@@ -47,7 +49,7 @@ export const metadata: Metadata = {
     title: "Ambar Gupta | AI Developer",
 
     description:
-      "Modern AI Developer Portfolio built with Next.js and Tailwind CSS.",
+      "AI Developer portfolio built with Next.js and Tailwind CSS.",
 
     images: ["/AgPort.png"],
   },
