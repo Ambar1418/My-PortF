@@ -54,3 +54,26 @@ export const metadata: Metadata = {
     images: ["/AgPort.png"],
   },
 };
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="en"
+      className="h-full antialiased scroll-smooth"
+      suppressHydrationWarning
+    >
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} bg-[#050505] text-foreground min-h-screen flex flex-col selection:bg-blue-500 selection:text-black`}
+        suppressHydrationWarning
+      >
+        <main className="relative z-10 w-full flex-1 flex flex-col">
+          {children}
+        </main>
+      </body>
+    </html>
+  );
+}
