@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -24,7 +27,16 @@
   </head>
 
   <body>
-    <header id="header" class="header">
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="jumping-dots">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <header id="header" class="header glass-navbar">
       <div class="container container-lg">
         <div class="header-nav">
           <a
@@ -32,7 +44,7 @@
             class="logo"
             data-aos="fade-down"
             data-aos-duration="1000"
-            >Ambar</a
+            >Ambar Gupta</a
           >
           <nav id="nav" class="nav">
             <ul class="nav-list" data-aos="fade-down" data-aos-duration="1000">
@@ -48,6 +60,7 @@
               <li class="nav-item">
                 <a href="#projects" class="nav-link">Works</a>
               </li>
+
               <li class="nav-item">
                 <a href="#contact" class="nav-link">Contact</a>
               </li>
@@ -310,7 +323,6 @@
         </div>
       </div>
     </section>
-
     <section id="projects" class="projects">
       <div class="container container-lg">
         <div class="projects-title">

@@ -77,31 +77,37 @@
   .nav.open .nav-list {
     position: fixed;
     inset: 0;
-    background-color: #fff;
-    z-index: 1;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(15px);
+    z-index: 1001;
     padding: 46px 30px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     row-gap: 24px;
-    font-size: 48px;
-    font-weight: 500;
+    font-size: 32px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
   }
 
   .nav-link {
-    color: #565a5b;
+    color: var(--supportive-text-color);
   }
 
   .nav-link.active {
-    color: #0c1618;
+    color: var(--primary-accent);
   }
 
   .nav-btn {
     position: absolute;
-    z-index: 9;
-    top: 36px;
-    right: 30px;
+    z-index: 1002;
+    top: 30px;
+    right: 25px;
+    background: transparent;
+    border: none;
+    color: var(--white-color);
+    font-size: 24px;
   }
 
   .nav.open .nav-btn {
