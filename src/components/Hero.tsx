@@ -72,7 +72,7 @@ export default function Hero() {
           className="flex flex-col sm:flex-row items-center gap-6"
         >
           <a
-            href="/resume.pdf"
+            href="/docs/resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="relative group px-10 py-4 rounded-full bg-white text-black font-bold text-base flex items-center justify-center gap-3 overflow-hidden transition-transform active:scale-95 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]"
