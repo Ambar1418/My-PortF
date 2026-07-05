@@ -4,6 +4,7 @@ import TopStatus from "@/components/TopStatus";
 import BottomNav from "@/components/BottomNav";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Certificates from "@/components/Certificates";
 import Contact from "@/components/Contact";
@@ -62,6 +63,7 @@ export default function Home() {
       <div className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-24 flex flex-col gap-24 pb-32">
         <Hero />
         <About />
+        <Experience />
         <Projects />
         <Certificates />
         <Contact />

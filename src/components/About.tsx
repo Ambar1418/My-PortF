@@ -5,12 +5,12 @@ import { BrainCircuit, Database, Server, TerminalSquare, Layers, Cpu } from "luc
 
 export default function About() {
   const skills = [
-    { name: "HTML/CSS", level: 80 },
-    { name: "Python", level: 75 },
-    { name: "FastAPI / Django", level: 75 },
-    { name: "C++", level: 65 },
-    { name: "JavaScript", level: 60 },
-    { name: "C / Java", level: 50 },
+    { name: "React.js / Vue.js / Frontend", level: 85 },
+    { name: "Python / FastAPI / Django", level: 85 },
+    { name: "AI Agents, RAG & LLM Integration", level: 80 },
+    { name: "Deep Learning / Computer Vision / NLP", level: 75 },
+    { name: "REST API Design & Databases (MySQL, Redis)", level: 80 },
+    { name: "DSA (300+ problems solved)", level: 75 },
   ];
 
   const floatingIcons = [
@@ -30,10 +30,10 @@ export default function About() {
           About Me
         </h2>
         <p className="text-gray-400 text-lg leading-relaxed mb-4">
-          Hi, I'm Ambar, a passionate B.Tech CSE (AI & DS) student with a keen interest in artificial intelligence and data science. I'm dedicated to learning and applying cutting-edge technologies to solve real-world problems.
+          I&apos;m Ambar Gupta, a B.Tech CSE (AI &amp; Data Science) student currently interning as a Full Stack Developer at Site Guru Pvt. Ltd., where I build production applications used by real users. I specialize in full stack development, AI agent &amp; RAG engineering, and applied machine learning — turning ideas into deployed, working software rather than just prototypes.
         </p>
         <p className="text-gray-400 text-lg leading-relaxed">
-          Outside of academics, I enjoy exploring new technologies, working on personal projects, and continuously expanding my knowledge in the field of computer science. I'm proficient in various programming languages and frameworks, with a strong foundation in both frontend and backend development.
+          I&apos;ve designed RAG pipelines and LLM integrations with Claude and Groq, trained deep learning models (including a 95%+ accuracy CNN with attention layers), and shipped multiple full stack apps with FastAPI, Django, React, and Vue. I was selected in my institute&apos;s Top 50 (Super 50), lead the Competitive Programming chapter at GDG SISTec Bhopal — mentoring 50+ students — and have solved 300+ DSA problems across LeetCode and GeeksforGeeks.
         </p>
       </div>
 
@@ -88,7 +88,7 @@ export default function About() {
           </div>
           
           <div className="flex flex-wrap gap-3">
-            {["React", "Next.js", "Python", "FastAPI", "Node.js", "MongoDB", "PostgreSQL", "LangChain", "OpenAI", "RAG", "TensorFlow", "PyTorch", "Docker", "AWS"].map((tech, idx) => (
+            {["React.js", "Vue.js", "Next.js", "Python", "FastAPI", "Django", "Node.js", "MySQL", "Redis", "FAISS", "LangChain", "LangGraph", "CrewAI", "Claude API", "Groq AI", "RAG", "n8n", "TensorFlow", "Keras", "Scikit-Learn", "Computer Vision", "Docker", "Git & GitHub Actions"].map((tech, idx) => (
               <span key={idx} className="px-4 py-2 text-sm font-medium text-gray-300 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-neon-cyan/50 rounded-full transition-colors cursor-default">
                 {tech}
               </span>

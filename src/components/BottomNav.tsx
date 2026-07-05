@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, User, FolderGit2, Mail, Award } from "lucide-react";
+import { Home, User, Briefcase, FolderGit2, Mail, Award } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
@@ -10,6 +10,7 @@ export default function BottomNav() {
   const tabs = [
     { id: "home", icon: Home, label: "Home" },
     { id: "about", icon: User, label: "About" },
+    { id: "experience", icon: Briefcase, label: "Work" },
     { id: "projects", icon: FolderGit2, label: "Projects" },
     { id: "certificates", icon: Award, label: "Certs" },
     { id: "contact", icon: Mail, label: "Contact" },

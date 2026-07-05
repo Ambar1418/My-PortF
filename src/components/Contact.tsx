@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, Copy, CheckCircle2, Send, ArrowRight } from "lucide-react";
+import { Mail, Copy, CheckCircle2, ArrowRight } from "lucide-react";
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
@@ -18,7 +18,7 @@ export default function Contact() {
       <div className="mb-12 max-w-2xl">
         <h2 className="text-3xl md:text-5xl font-bold text-white flex items-center gap-4 mb-4">
           <span className="w-2 h-10 bg-neon-purple rounded-full block shadow-[0_0_15px_rgba(188,19,254,0.5)]"></span>
-          Let's Connect
+          Let&apos;s Connect
         </h2>
       </div>
 
@@ -31,9 +31,9 @@ export default function Contact() {
           {/* Left Side: Info & Copy Email */}
           <div className="flex flex-col gap-8">
             <div>
-              <h3 className="text-2xl md:text-4xl font-bold text-white mb-4">Open for Internships & Projects</h3>
+              <h3 className="text-2xl md:text-4xl font-bold text-white mb-4">Open to Full Stack, AI Agent & ML Roles</h3>
               <p className="text-gray-400 text-lg leading-relaxed">
-                I'm currently looking for new opportunities. Whether you have a question, a project idea, or just want to say hi, I'll try my best to get back to you!
+                I&apos;m currently open to Full Stack Developer, AI Agent/RAG Engineer, and ML Engineer internships and roles. Whether you have an opportunity, a project idea, or just want to say hi, I&apos;ll try my best to get back to you!
               </p>
             </div>
 

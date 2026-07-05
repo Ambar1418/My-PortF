@@ -5,7 +5,21 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, ExternalLink, ChevronRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
-const projectsData = [
+interface Project {
+  id: string;
+  title: string;
+  desc: string;
+  fullDesc: string;
+  tech: string[];
+  link: string;
+  github?: string;
+  image: string;
+  color: string;
+  border: string;
+  shadow: string;
+}
+
+const projectsData: Project[] = [
   {
     id: "vk-bot",
     title: "VK Bot – AI Cricket Chatbot",
@@ -20,10 +34,10 @@ const projectsData = [
   },
   {
     id: "hair-detector",
-    title: "Hair & Scalp Detector",
-    desc: "AI-powered Analysis Tool for detecting hair and scalp diseases.",
-    fullDesc: "A computer vision model that analyzes scalp images to detect potential hair diseases. Built to assist in dermatological assessments with high accuracy.",
-    tech: ["Python", "TensorFlow", "Computer Vision"],
+    title: "Hair & Scalp Disease Prediction System",
+    desc: "Custom CNN with attention layers detecting scalp diseases with 95%+ accuracy.",
+    fullDesc: "Trained a custom CNN with Self-Attention and Multi-Head Attention layers on 12,000+ images across 10 disease classes, achieving 95%+ test accuracy with sub-2-second inference. Built as a full-stack Django diagnostic web app with a REST prediction API, drag-and-drop image upload, real-time results, and automated PDF medical report generation.",
+    tech: ["Python", "TensorFlow", "Keras", "Django", "ResNet50", "Computer Vision"],
     link: "https://hair-scalp-disease-detector.onrender.com/",
     image: "/img/hair.png",
     color: "from-purple-500/10 to-pink-500/10 hover:from-purple-500/20 hover:to-pink-500/20",
@@ -67,6 +81,30 @@ const projectsData = [
     color: "from-yellow-500/10 to-amber-500/10 hover:from-yellow-500/20 hover:to-amber-500/20",
     border: "border-yellow-500/20 hover:border-yellow-500/50",
     shadow: "hover:shadow-[0_0_30px_rgba(245,158,11,0.3)]"
+  },
+  {
+    id: "lead-distribution",
+    title: "Mini Lead Distribution System",
+    desc: "Full-stack lead management system with automated assignment.",
+    fullDesc: "A full stack lead management system built with FastAPI and React.js, featuring automated lead assignment, RESTful CRUD endpoints, and MySQL database integration. Designed a scalable backend architecture connecting frontend to database with sub-second query response times.",
+    tech: ["Python", "FastAPI", "React.js", "MySQL", "REST APIs"],
+    link: "https://mini-lead-distribution-system-0gtw.onrender.com",
+    image: "/img/lead-distribution.png",
+    color: "from-teal-500/10 to-blue-500/10 hover:from-teal-500/20 hover:to-blue-500/20",
+    border: "border-teal-500/20 hover:border-teal-500/50",
+    shadow: "hover:shadow-[0_0_30px_rgba(20,184,166,0.3)]"
+  },
+  {
+    id: "interview-bot",
+    title: "AI Interview Preparation Bot",
+    desc: "Automated hiring workflow generating and emailing interview questions.",
+    fullDesc: "An end-to-end agentic automation pipeline that generates role-specific interview questions via Groq AI, delivers them to candidates via Gmail, and logs every record in Google Sheets with zero manual steps. Orchestrated with n8n across 4 external APIs (Groq, Gmail, Google Sheets, webhook trigger), processing 20+ candidate records per run and cutting interview-prep workflow time by 85%.",
+    tech: ["n8n", "Groq AI", "Gmail API", "Google Sheets", "Automation"],
+    link: "https://ambar1418.github.io/AI-Interview-Bot-Records/",
+    image: "/img/interview-bot.png",
+    color: "from-violet-500/10 to-pink-500/10 hover:from-violet-500/20 hover:to-pink-500/20",
+    border: "border-violet-500/20 hover:border-violet-500/50",
+    shadow: "hover:shadow-[0_0_30px_rgba(217,70,239,0.3)]"
   },
   {
     id: "sistec-rag-demo",
@@ -178,7 +216,7 @@ export default function Projects() {
                   <a href={selectedProject.link} target="_blank" rel="noreferrer" className="flex-1 py-4 rounded-2xl bg-neon-cyan text-black font-bold text-sm md:text-base flex items-center justify-center gap-3 hover:bg-white transition-colors">
                     <ExternalLink size={20} /> View Live Project
                   </a>
-                  <a href={(selectedProject as any).github || "https://github.com/Ambar1418"} target="_blank" rel="noreferrer" className="flex-1 py-4 rounded-2xl glass border-white/10 text-white font-bold text-sm md:text-base flex items-center justify-center gap-3 hover:bg-white/10 transition-colors">
+                  <a href={selectedProject.github || "https://github.com/Ambar1418"} target="_blank" rel="noreferrer" className="flex-1 py-4 rounded-2xl glass border-white/10 text-white font-bold text-sm md:text-base flex items-center justify-center gap-3 hover:bg-white/10 transition-colors">
                     <FaGithub size={20} /> View Source Code
                   </a>
                 </div>

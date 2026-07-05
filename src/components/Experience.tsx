@@ -7,37 +7,40 @@ export default function Experience() {
   const timeline = [
     {
       id: 1,
-      type: "education",
-      title: "B.Tech in Computer Science (AI & DS)",
-      company: "University",
-      date: "Present",
-      desc: "Focusing on Artificial Intelligence, Data Science, and Machine Learning. Continuously learning and applying cutting-edge technologies to solve real-world problems.",
+      type: "work",
+      title: "Full Stack Developer Intern",
+      company: "Site Guru Pvt. Ltd. · Remote",
+      date: "Jun 2026 – Present",
+      desc: "Built and enhanced 3+ full-stack web applications using Vue.js, JavaScript, Node.js, and MySQL. Integrated the Razorpay payment gateway (eliminating manual payment handling for 2 client apps) and shipped real-time features with WebSockets and LiveKit for live chat, video, and meetings at sub-200ms latency.",
     },
     {
       id: 2,
       type: "work",
-      title: "Full Stack Development",
-      company: "Self-Taught / Personal Projects",
-      date: "Ongoing",
-      desc: "Building scalable web applications using modern web technologies like React, Next.js, Node.js, FastAPI, and Django. Exploring API integrations and database management.",
+      title: "Competitive Programming Co-Lead",
+      company: "Google Developer Group (GDG), SISTec Bhopal",
+      date: "Jan 2023 – Present",
+      desc: "Organized 10+ coding contests and full-stack development workshops, mentoring 50+ students in DSA, AI/ML, and web technologies. Grew chapter participation by 40% through technical events and speaker sessions.",
     },
     {
       id: 3,
-      type: "work",
-      title: "AI & Machine Learning",
-      company: "Research & Projects",
-      date: "Ongoing",
-      desc: "Developing computer vision models, NLP-powered chatbots, and automated agents. Utilizing Python, TensorFlow, and LangChain to bridge the gap between AI and practical applications.",
+      type: "education",
+      title: "B.Tech in Computer Science (AI & Data Science)",
+      company: "Sagar Institute of Science and Technology (SISTec), Bhopal",
+      date: "Aug 2023 – Jun 2027",
+      desc: "CGPA: 7.6. Selected in the institute-wide Top 50 (Super 50). Coursework in Machine Learning, NLP, Computer Vision, Operating Systems, DBMS, and Computer Networks. 300+ DSA problems solved, including the GFG 160-Day Coding Challenge.",
     }
   ];
 
   return (
-    <section className="py-12 w-full relative">
+    <section id="experience" className="py-12 w-full relative">
       <div className="mb-16 max-w-2xl">
         <h2 className="text-3xl md:text-5xl font-bold text-white flex items-center gap-4 mb-4">
           <span className="w-2 h-10 bg-neon-blue rounded-full block shadow-[0_0_15px_rgba(0,243,255,0.5)]"></span>
           Experience
         </h2>
+        <p className="text-gray-400 text-lg leading-relaxed">
+          Real-world work, leadership, and academic milestones.
+        </p>
       </div>
 
       <div className="relative pl-8 md:pl-12 border-l-2 border-white/10 max-w-4xl">

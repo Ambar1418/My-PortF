@@ -2,7 +2,7 @@
 
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
-import { Download, Code2 } from "lucide-react";
+import { Download, Code2, BarChart3 } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
@@ -41,9 +41,10 @@ export default function Hero() {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple font-bold glow-text">
             <Typewriter
               words={[
-                "B.Tech CSE (AI & DS) Student",
                 "Full Stack Developer",
-                "AI & Data Science Enthusiast"
+                "AI Agent & RAG Engineer",
+                "ML Engineer",
+                "B.Tech CSE (AI & DS)"
               ]}
               loop={true}
               cursor
@@ -61,7 +62,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="text-base md:text-xl text-gray-400 max-w-xl mb-10 leading-relaxed"
         >
-          Passionate about Artificial Intelligence, Data Science, and building scalable web applications to solve real-world problems.
+          Full Stack Developer Intern at Site Guru Pvt. Ltd., building production apps and AI agents — RAG pipelines, LLM integrations (Claude &amp; Groq), and end-to-end deep learning systems.
         </motion.p>
 
         <motion.div
@@ -86,6 +87,7 @@ export default function Hero() {
               { icon: FaGithub, href: "https://github.com/Ambar1418" },
               { icon: FaLinkedin, href: "https://www.linkedin.com/in/ambar-gupta-095347291/" },
               { icon: Code2, href: "https://leetcode.com/u/cqh92hexfD/" },
+              { icon: BarChart3, href: "https://codolio.com/profile/Steve" },
             ].map((social, idx) => (
               <a
                 key={idx}
